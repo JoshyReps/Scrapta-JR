@@ -185,27 +185,27 @@ let quizes = [
     },
     {
         question: "Which of these is an example of e-waste?",
-        a: "A. Old phone",
+        a: "A. Plastic",
         b: "B. Banana peel",
         c: "C. Paper notebook",
-        d: "D. Empty can",
-        answer: "a"
+        d: "D. Old phone",
+        answer: "d"
     },
     {
         question: "Why is e-waste dangerous?",
         a: "A. It smells bad",
-        b: "B. It has toxic chemicals",
-        c: "C. It is too heavy",
+        b: "B. It is too Heavy",
+        c: "C. It has toxic chemicals",
         d: "D. It looks dirty",
-        answer: "b"
+        answer: "c"
     },
     {
         question: "Which is part of the 3Rs?",
-        a: "A. Reduce",
+        a: "A. Rest",
         b: "B. Run",
         c: "C. Ride",
-        d: "D. Rest",
-        answer: "a"
+        d: "D. Reduce",
+        answer: "d"
     },
     {
         question: "What can we do instead of throwing a working phone?",
@@ -217,11 +217,11 @@ let quizes = [
     },
     {
         question: "Which is a BIG type of e-waste?",
-        a: "A. Refrigerator",
+        a: "A. Cardboard",
         b: "B. Candy wrapper",
-        c: "C. Notebook",
-        d: "D. Water bottle",
-        answer: "a"
+        c: "C. Refrigerator",
+        d: "D. Notebook",
+        answer: "c"
     },
     {
         question: "What happens if batteries are thrown in the trash?",
@@ -263,7 +263,7 @@ function getRandomQuiz() {
 
     if(quizTemp.length === 0) {
         document.querySelector("#quiz-question").textContent = "You Won! 🎉"
-        document.querySelector("q-btn").classList.add("hidden");
+        document.querySelector(".quiz-btns").classList.add("hidden");
     }
 
     let i = Math.floor(Math.random() * quizTemp.length)
