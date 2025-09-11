@@ -57,7 +57,7 @@ a {
     background: linear-gradient(90deg, #f878f8 0%, #ee2ade 100%);
 }
 
-.flex {
+.center {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,6 +161,7 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
     overflow: hidden;
+    margin-top: 20vh;
 }
 
 .selection-name {
@@ -190,7 +191,7 @@ a {
 }
 
 .logo {
-    width: 100%;
+    width: 90%;
 }
 
 .select {
@@ -210,9 +211,9 @@ a {
     background-color: rgb(226, 183, 190);
     width:3.5vh;
     border-radius: 50px;
-    border: 2px solid #ffffff;
-    transform: scale(400%);
-    padding: 5px;
+    border: 1px solid #ffffff;
+    transform: scale(600%);
+    padding: 3px;
 }
 
 .select {

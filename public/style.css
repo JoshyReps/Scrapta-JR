@@ -11,9 +11,18 @@ html {
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background: url("images/bg/final-indexBg.png") center / cover no-repeat;
+    padding-top: 3rem;
 }
 
 /* -------------- varaibles ---------------- */
+
+.orange-nav {
+    background: linear-gradient(90deg, #004019 0%, #006928 100%);
+}
+
+.dark-orange {
+    background: linear-gradient(180deg, #ff7b00 0%, #ff9029 100%) !important;
+}
 
 .orange {
     background: linear-gradient(90deg, #ffb300 0%, #e6aa12 100%);
@@ -42,7 +51,7 @@ body {
     background: linear-gradient(90deg, #82aeff 0%, #b2e0f3 100%);
 }
 
-.flex {
+.center {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +61,7 @@ body {
 
 /* ---------------- Nav Bar ----------------- */
 .nav-bar {
-    height: 8vh;
+    height: 4rem;
     width: 100%;
     justify-content: space-between;
     border: 2px solid black;
@@ -67,16 +76,16 @@ body {
 }
 
 .nav-1 {
-    height: 6vh;
+    height: 9vh;
     font-weight: 1000;
     width: 25%;
-    border-radius: 50px;
-    border: 2px solid white;
+    /* border-radius: 50px; */
+    /* border: 2px solid white; */
     padding-left: 1%;
     justify-content: flex-start;
     gap: 5%;
     font-size: 1.5rem;
-    background: linear-gradient(90deg, #f78720 0%, #feb704 100%);
+    /* background: linear-gradient(90deg, #f78720 0%, #feb704 100%); */
 }
 
 /* .nav-2 {
@@ -86,6 +95,8 @@ body {
 .nav-3 {
     width: 45%;
     font-size: 1rem;
+    padding-right: 1rem;
+    gap: 5%;
     justify-content: flex-end;
 }
 
@@ -110,11 +121,13 @@ body {
 }
 
 .link {
-    border-left: 2.5px solid black;
-    width: 25%;
-    height: 8vh;
+    /* border-left: 2.5px solid black; */
+    width: 23%;
+    height: 7vh;
     background-color: #f0c5596e;
     transition: background-color 0.3s;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px black;
 }
 
 .link:hover {
@@ -137,10 +150,11 @@ a {
 }
 
 #nav-logo {
-    width: 20%;
+    width: 50%;
     transform: scale(120%);
     border-radius: 100px;
-    border: 2px solid white;
+    /* border: 2px solid rgb(0, 0, 0);
+    background-color: white; */
 }
 
 /* ------------------------------------------ */
@@ -196,7 +210,7 @@ a {
     /* background: url("images/bg/bg-1.png") center / cover no-repeat; */
     position: relative;
     overflow: hidden;
-    padding-top: 6vh;
+    padding-top: 4.5rem;
 }
 
 .upper-main-section {
@@ -293,12 +307,10 @@ a {
 .motto-con {
     color: white;
     font-size: 1.5rem;
-    /* font-weight: 1000; */
     font-style: italic;
-    margin-top: 10vh;
+    margin-top: 20vh;
     font-family: "Merriweather", serif;
     font-optical-sizing: auto;
-    /* font-style: normal; */
     font-variation-settings:
         "wdth" 100;
 }
