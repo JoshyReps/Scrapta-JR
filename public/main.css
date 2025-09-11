@@ -1204,6 +1204,16 @@ a {
 
 @media (max-width: 600px) {
 
+    .th-1 > img {
+        width: 40%;
+        margin-bottom: 3rem;
+    }
+
+    .r-3 {
+        padding: 0rem 1.5rem;
+        font-size: .8rem !important;
+    }
+
     .th-2 > h2 {
         font-size: 2.5rem;
     }
@@ -1213,13 +1223,25 @@ a {
     }
 
     .th-hero {
-        padding: 1rem 2rem;
-        gap: 8%;
+        flex-direction: column;
+        padding: 1rem 3rem;
+        gap: 5vh;
         min-height: 50vh;
     }
 
+    .th-4-1 {
+        height: 90vh;
+    }
+
+
+    .th-4-1 > img {
+        width: 50%;
+        transform: scale(130%) translateY(3vh) !important;
+    }
+
     .th-1 > p {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        line-height: 2rem;
     }
 
     .th-hero-text > h2 {
@@ -1456,6 +1478,13 @@ a {
         transform: scale(160%) !important;
     }
 
+}
+
+
+@media (max-height : 600px) {
+    .id-con-1 {
+        transform: translateY(-23vh) scale(80%);
+    }
 }
 
 /* --------------------- ----------------------------- */
