@@ -1306,8 +1306,9 @@ a {
 
     #introduction {
         padding-top: 10rem;
-        gap: 7rem;
+        gap: 4rem;
         min-height: 170vh;  
+        display: flex;
     }
 
     #introduction > img {
@@ -1546,10 +1547,6 @@ a {
     .select > a{
         font-size: 2rem;
     }
-
-    /* .s-9 {
-        width: 75%;
-    } */
 
     .logo-con {
         width: 95%;
