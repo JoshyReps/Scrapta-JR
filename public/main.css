@@ -180,7 +180,6 @@ a {
 
 #introduction > img {
     width: 30rem;
-    transform: scale(100%);
     transition: transform 0.3s;
 }
 
@@ -1617,7 +1616,6 @@ a {
 }
 
 /* --------------------- ----------------------------- */
-
 
 
 
