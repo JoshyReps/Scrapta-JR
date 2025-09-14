@@ -9,8 +9,7 @@ html {
 }
 
 body {
-    /* background: url("images/bg/Home.png") center / cover no-repeat fixed; */
-    background: url("images/bg/bg-pattern.png") center / cover no-repeat fixed, linear-gradient(90deg, #360f5a 0%, #360f5a 100%);
+    /* background: url("images/bg/bg-pattern.png") center / cover no-repeat fixed, linear-gradient(90deg, #360f5a 0%, #360f5a 100%); */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -114,16 +113,26 @@ a {
 /* --------------------- ----------------------------- */
 
 /* -------------------- Nav Bar----------------------- */
-.main-header {
-    height: 4.5rem;
-    border: 2px solid black;
-    box-shadow: 1px 1px 15px rgb(255, 255, 255);
+.nav-bar {
+    padding: 0rem 2rem;
+    width: 100%;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     z-index: 100;
-    width: 100%;
-    justify-content: space-between;
-    padding: 0% 2%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, height 0.3s ease, border 0.3s ease;
+}
+
+.nav-bar-top {
+    height: 5rem;
+    background-color: rgba(0, 105, 40, 0);
+}
+
+.nav-bar-scrolled {
+    height: 4.5rem;
+    border: 2px solid black;
+    box-shadow: 1px 1px 15px white;
+    background-color: rgba(0, 105, 40, 1); 
 }
 
 .nav-con {
@@ -146,32 +155,76 @@ a {
     border-radius: 100px;
 }
 
+#back-button {
+    background: transparent;
+    border: none;
+}
+
 .buttons {
     gap: 16%;
     justify-content: flex-start;
 }
-
-.name {
-    padding-top: .5rem;
-    text-align: center;
-    font-family: "Sirivennela", sans-serif;
-    color: rgb(71, 0, 0);
-    font-weight: 1000;
-}
-
-.name > img {
-    width: 80%;
-    transform: scale(70%);
-}
 /* --------------------- ----------------------------- */
 
+
+/* -------------------- Introduction ------------------ */
+
+#introduction {
+    min-height: 100vh;
+    background: url("images/bg/bg-3.png") center / cover no-repeat;
+    flex-direction: column;
+    padding-top: 2rem;
+    justify-content: flex-start;
+    gap: 2.5rem;
+}
+
+#introduction > img {
+    width: 33rem;
+    transform: scale(100%);
+    transition: transform 0.3s;
+}
+
+#introduction > img:hover {
+    transform: scale(120%);
+}
+
+#introduction > button {
+    background: transparent;
+    border: none;
+    width: 20%;
+}
+
+
+#introduction > button > img {
+    background-color: rgba(210, 228, 218, 0.836);
+    width: 5rem;
+    padding: 1rem;
+    border-radius: 100px;
+    border: 3px solid rgb(30, 109, 50);
+    transform: scale(100%);
+    transition: background-color 0.4s, border 0.4s, transform 0.4s;
+}
+
+#introduction > button > img:hover {
+    background-color: rgba(129, 228, 173, 0.836);
+    border: 3px solid rgb(40, 148, 67);
+    transform: scale(110%);
+}
+
+/* ---------------------------------------------------- */
 
 /* -------------------- Selection --------------------- */
 #selection {
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     overflow: hidden;
-    margin-top: 20vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #4592fd7e;
 }
 
 .selection-name {
@@ -1111,6 +1164,18 @@ a {
 
 @media (max-width: 900px) {
 
+    #introduction {
+        padding-top: 4rem;
+        gap: 7rem;
+        min-height: 115vh;
+        background: url("images/bg/bg-3-m.png") center / cover no-repeat;
+    }
+
+    #introduction > img {
+        width: 25rem;
+        transform: scale(120%);
+    }
+
     .r-3 > h2 {
         font-size: 2.5rem;
         text-align: center;
@@ -1216,6 +1281,21 @@ a {
 }
 
 @media (max-width: 600px) {
+
+    #selection {
+        padding-bottom: 2rem;
+    }
+
+    #introduction {
+        padding-top: 10rem;
+        gap: 7rem;
+        min-height: 170vh;  
+    }
+
+    #introduction > img {
+        width: 20rem;
+        transform: scale(120%);
+    }
 
     .r-3 > ul > li {
         font-size: 1rem;
@@ -1430,10 +1510,6 @@ a {
         width: 40%;
         margin-top: 2vh;
         min-height: 100px;
-    }
-
-    .blank {
-        display: none;
     }
 
     .nav-con {

@@ -45,9 +45,23 @@
 
 @keyframes botton-up-view {
     from {
+        opacity: 0%;
         transform: translateY(100%);
     }
     to {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+
+@keyframes botton-up-zoom {
+    from {
+        transform: scale(70%);
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 100%;
+        transform: scale(100%);
         transform: translateY(0);
     }
 }
@@ -58,10 +72,31 @@
     animation-range: entry 0% cover 40%;
 }
 
+.bottom-up-zoom {
+    animation: botton-up-zoom linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
 .bottom-up-slow {
     animation: botton-up-view linear;
     animation-timeline: view();
     animation-range: entry 0% cover 50%;
+}
+
+@keyframes top-below-view {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.top-below {
+    animation: top-below-view linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 @keyframes arch-bottom-right {
