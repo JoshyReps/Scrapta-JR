@@ -16,24 +16,27 @@
 
 <body>
 
-    <nav class="main-header nav-color center">
+    <nav class="nav-bar center nav-bar-top">
         <div class="buttons center nav-con">
             <a href="index.html" class="button-con center">
                 <img class="nav-svg" src="public/images/svg/home.svg" alt="">
             </a>
-            <a href="#selection" class="button-con center">
-                <img class="nav-svg" src="public/images/svg/left.svg" alt="">
+            <a href="#introduction" class="button-con center">
+                <button id="back-button" onclick="closeSelection()">
+                    <img class="nav-svg" src="public/images/svg/left.svg" alt="">
+                </button>
             </a>
-        </div>
-        <div class="name nav-con">
-            <img src="public/images/graphic/logo-wn.png" alt="">
-        </div>
-        <div class="blank nav-con">
-
         </div>
     </nav>
 
-    <section id="selection" class="center container">
+    <section id="introduction" class="center">
+        <img class="zoom-in" src="public/images/graphic/main-title.png" alt="">
+        <button onclick="openSelection()">
+            <img class="zoom-in" src="public/images/svg/arrow-down.svg" alt="" clas>
+        </button>
+    </section>
+
+    <section id="selection" class="center container hidden">
 
         <aside class="select-bar center">
             <a href="#definition" class="select s-1 red indent-r left-right-d hover-scale">
@@ -52,10 +55,6 @@
 
         <section class="logo-con center">
             <img class="logo hover-scale" src="public/images/graphic/logo-g.png" alt="">
-            <!-- <div class="select s-9 orange">
-                <img class="s-image orange" src="public/images/selectors/s-6-facts.png" alt="">
-                <a href="">Fun Quiz</a>
-            </div> -->
         </section>
 
         <aside class="select-bar center">
@@ -69,7 +68,7 @@
             </a>
             <a href="#quiz" class="select s-6 yellow indent-l right-left-d hover-scale">
                 <img class="s-image yellow" src="public/images/selectors/s-6-facts.png" alt="">
-                Quiz
+                Games
             </a>
         </aside>
     </section>
@@ -77,7 +76,7 @@
 
     <section id="definition" class="red">
 
-        <img class="transition-svg" src="public/images/svg/info-sections/sec-1.svg" alt="">
+        <img class="transition-svg" src="public/images/svg/info-sections/d-1.svg" alt="">
 
         <div class="title t-1 center">
             
@@ -507,7 +506,7 @@
         <section class="hidden pop-up fact">
             <div class="exit center">
                 <button class="x-button">
-                    <img class="x-svg" onclick='exitButton("fact")' src="public/images/svg/exit.svg" alt="">
+                    <img class="x-svg" onclick='exitButton("fact")' src="public/images/svg/x.svg" alt="">
                 </button>
             </div>
 
@@ -523,7 +522,7 @@
 
             <div class="exit center">
                 <button class="x-button">
-                    <img class="x-svg" onclick='exitButton("identify")' src="public/images/svg/exit.svg" alt="">
+                    <img class="x-svg" onclick='exitButton("identify")' src="public/images/svg/x.svg" alt="">
                 </button>
             </div>
             <div class="game-score game-score-identify center">
@@ -532,7 +531,7 @@
             <div class="center id-con-1">
                 <h1 id="id-h1">Identify if it is an E-Waste 🥰</h1>
                 <div class="id-image">
-                    <img src="" alt="">
+                    <img id="id-image" src="" alt="">
                 </div>
                 <div class="center id-buttons">
                     <button class="green" onclick="identifyYes()">Yes</button>
@@ -544,7 +543,7 @@
         <section class="hidden pop-up daily">
             <div class="exit center">
                 <button class="x-button">
-                    <img class="x-svg" onclick='exitButton("daily")' src="public/images/svg/exit.svg" alt="">
+                    <img class="x-svg" onclick='exitButton("daily")' src="public/images/svg/x.svg" alt="">
                 </button>
             </div>
 
@@ -559,7 +558,7 @@
         <section class="hidden pop-up quiz">
             <div class="exit center">
                 <button class="x-button">
-                    <img class="x-svg" onclick='exitButton("quiz")' src="public/images/svg/exit.svg" alt="">
+                    <img class="x-svg" onclick='exitButton("quiz")' src="public/images/svg/x.svg" alt="">
                 </button>
             </div>
             <div class="game-score game-score-identify center">
@@ -603,6 +602,7 @@
 
     </section>
 
+    <script src="main.js" ></script>
     <script src="index.js" ></script>
 </body>
 
