@@ -190,6 +190,7 @@ a {
 #introduction > div > p{
     text-align: center;
     font-size: 1.5;
+    line-height: 2.3rem;
 }
 
 #introduction > img:hover {
@@ -473,6 +474,7 @@ a {
     color: rgb(0, 3, 51);
     text-shadow: 1px 1px 10px rgb(180, 136, 207);
     font-weight: 500;
+    overflow: hidden;
 }
 
 .t-2 {
@@ -499,7 +501,6 @@ a {
 .type-2 {
     min-height: 200vh;
     flex-direction: column;
-    padding: 0% 4%;
     justify-content: flex-start;
     padding-bottom: 10vh;
     background: url("images/info-sections/type/t-bg.png") center / cover no-repeat, linear-gradient(180deg, 	#bd6dff 0%, 	#d426ff 100%);
@@ -507,7 +508,6 @@ a {
 
 #type-wave {
     width: 100%;
-    transform: scale(115%);
 }
 
 .type-2-n {
@@ -515,6 +515,7 @@ a {
     flex-direction: column;
     background: linear-gradient(180deg, 	#a56dff1f 0%,	#836dff5b 100%);
     padding: 2%;
+    margin: 0% 2%;
     transform: scale(100%);
     transition: transform 0.5s, background-color 0.5s;
 } 
@@ -972,14 +973,14 @@ a {
 .pop-up {
     margin-top: 12vh;
     height: 85vh;
-    position: fixed;
+    position: absolute;
     width: 95%;
     margin-left: 2.5%;
     margin-right: 2.5%;
     /* background-color: rgba(68, 60, 112, 0.726); */
     top: 0;
     left: 0;
-    z-index: 3;
+    z-index: 5;
     color: white;
     background: url("images/info-sections/quiz/q-bg-pu.png") center / cover no-repeat fixed;
     border-radius: 50px;
@@ -1069,7 +1070,7 @@ a {
     justify-content: center;
     padding-top: 1vh;
     gap: 4vh;
-    transform: translateY(-7.3vh);
+    transform: translateY(-15.3vh);
     text-align: center;
 }
 
