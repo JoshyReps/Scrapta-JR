@@ -20,27 +20,16 @@ function exitButton (cl) {
 function generateFact() {
 
     let facts = [
-    "E-waste means old or broken electronics.",
-    "Throwing gadgets in trash can hurt the planet.",
-    "Old phones and computers are e-waste.",
-    "E-waste can leak harmful chemicals.",
-    "Recycling e-waste helps keep air and water clean.",
-    "Gold and silver can be found inside electronics.",
-    "Batteries in e-waste can be dangerous if not recycled.",
-    "Every year, the world makes millions of tons of e-waste.",
-    "E-waste grows faster than any other kind of trash.",
-    "Many parts of e-waste can be reused.",
-    "E-waste can pollute soil if dumped carelessly.",
-    "Recycling e-waste saves energy and resources.",
-    "Some old gadgets can be donated instead of thrown away.",
-    "Plastic from e-waste can be recycled into new things.",
-    "E-waste should go to special recycling centers.",
-    "Kids should never play with broken electronics.",
-    "Phones, TVs, and toys with batteries can all be e-waste.",
-    "Proper e-waste recycling helps protect animals.",
-    "E-waste recycling creates new materials for factories.",
-    "Taking care of gadgets reduces e-waste."
+        "Estonia, Norway, and Iceland have the highest e-waste recycling rates in the world",
+        "Currently, the amount of e-waste recycled globally prevents 15 million tonnes of carbon dioxide from being released into the environment",
+        "Recycling one million laptops saves enough energy to power 3,600 homes annually",
+        "Recycling one million mobile phones can recover 34kg of gold",
+        "Irresponsible e-waste recycling causes around 25% of data breaches",
+        "Recycling one tonne of circuit boards can contain 40 to 800 times more gold than can be mined from one tonne of ore",
+        "Households produce more than 400,000 tonnes of e-waste each year"
     ];
+
+    console.log(facts.length);
 
 
     let fact = facts[Math.floor(Math.random() * facts.length)]
