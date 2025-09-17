@@ -284,12 +284,12 @@ a {
 
 .sec-1-5-2 {
     padding: 1rem 1.5rem;
-    min-height: 30vh;
+    min-height: 50vh;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 6rem;
+    align-items: flex-end;
+    gap: 13%;
     flex-wrap: wrap;
 }
 
@@ -305,7 +305,7 @@ a {
 }
 
 .feature-con > img {
-    width: 55%;
+    width: 75%;
 }
 
 .feature-con > h3 {

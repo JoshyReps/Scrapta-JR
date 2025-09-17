@@ -9,7 +9,6 @@ html {
 }
 
 body {
-    /* background: url("images/bg/bg-pattern.png") center / cover no-repeat fixed, linear-gradient(90deg, #360f5a 0%, #360f5a 100%); */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -179,7 +178,7 @@ a {
 }
 
 #introduction > img {
-    width: 60%;
+    width: 45%;
     transition: transform 0.3s;
 }
 
@@ -503,6 +502,10 @@ a {
     justify-content: flex-start;
     padding-bottom: 10vh;
     background: url("images/info-sections/type/t-bg.png") center / cover no-repeat, linear-gradient(180deg, 	#bd6dff 0%, 	#d426ff 100%);
+}
+
+#transition-wave {
+    width: 100%;
 }
 
 #type-wave {
@@ -1270,7 +1273,7 @@ a {
 
     #introduction > div > p{
         text-align: center;
-        font-size: 1.5;
+        font-size: 2.2;
     }
 
     #introduction {
